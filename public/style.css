@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: auto;
+    margin-top: 100px;
+    width: 30vw;
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header > *{
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    padding: .5rem .8rem;
+    margin: .5rem 0;
+}
+
+.header textarea {
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.header button {
+    color: whitesmoke;
+    background-color: slategray;
+}
+
+.content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.note {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: slategray;
+}
+
+.note h2 {
+    flex: .5;
+    font-size: .9rem;
+    
+}
+
+.note p {
+    font-size: .9rem;
+}
+
+a, button {
+    font-size: .9rem;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: .3rem;
+    color: silver;
+    border: none;
+    outline: none;
+    background-color: slateblue;
+}
+
+.date {
+    font-size: .8rem !important;
+    flex: .7;
+    height: 100%;
+}
+
+.card {
+    word-wrap: break-word;
+}
+
+.card p {
+    margin: 1rem 0;
+}

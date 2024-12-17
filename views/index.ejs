@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+       <form class="header" action="/notes/create" method="POST">
+            <input type="text" name="title" id="title" placeholder="Enter title" required>
+            <textarea name="content" id="content" placeholder="Enter content"></textarea>
+            <button type="submit">Add a note</button>
+       </form>
+       <div class="content">
+            <% notes.forEach(note => { %>
+                <div class="note" >
+                    <h2><%= note.title %></h2>
+                    <p class="date"><%= new Date(note.noteCreated) %></p>
+                    <a href="/notes/view/<%= note.noteID %>">View more</a>
+
+                </div>
+            <% }) %>
+       </div>
+    </div>
+</body>
+</html>
